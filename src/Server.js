@@ -43,6 +43,7 @@ class Server {
                 <b>Commands executed</b>: 
                 ${returnedObj.executedCommands}<br/>
                 ${returnedObj.message}</br>
+                <b>Steps made:</b></br> 
                 ${returnedObj.stepsMade.join('<br>')}
                 `);
         });

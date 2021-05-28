@@ -40,6 +40,12 @@ class Field {
     get getY() {
         return this._actualYCoordinate;
     }
+    get rows() {
+        return this._rows;
+    }
+    get columns() {
+        return this._columns;
+    }
     get directionOrientation() {
         return this._directionOrientation;
     }

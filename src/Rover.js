@@ -72,8 +72,6 @@ class Rover {
                 points.push(point);
             }
         }
-        console.log("ci sono questi elementi in points!");
-        console.log(points.length);
         return points;
     }
 
@@ -89,6 +87,7 @@ class Rover {
             this.field.loadRawMap.bind(this._field);
             this.field.loadRawMap(arrayOfFoundElements);
             console.log("RAW MAP LOADED IN THE FIELD REPRESENTATION");
+            console.log(`DIMENSION OF THE MAP: ${this.field.rows} ROWS AND ${this.field.columns} COLUMNS`);
         },
         null,
         1000);
@@ -106,7 +105,7 @@ class Rover {
         const result = {
             executedCommands: [],
             message: 'All commands where executed',
-            stepsMade: [`Punto iniziale-> x: ${this.field.getY}, y:${this.field.getY}`]
+            stepsMade: [`Initial points-> x: ${this.field.getX}, y:${this.field.getY}`]
         };
 
         for (let i = 0; i < receivedCommands.length; i++) {
