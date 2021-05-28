@@ -1,20 +1,20 @@
 # Mars Rover
-####How to Run the program
+#### How to Run the program
 For running the script, is sufficient to cd in the /src folder of the project, and launch:
 > node main.js
 
 I have tested the code with node v10.16.0 .
-####What route to call for passing the commands to the Rover?
+#### What route to call for passing the commands to the Rover?
 The route to call is the following?
 > http://{ipaddress}:{port}/parseCommands
 
 For example, with the defaults parameters in the configuration:
 > http://localhost:3005/parseCommands
-####How to this route?
+#### How to this route?
 You have to pass an array parameter, with a javascript-like array as a parameter.
 An example:
 >http://localhost:3005/parseCommands?array=["GoFrontCommand","GoLeftCommand"]
-####What commands are supported?
+#### What commands are supported?
 These is the list of the supported commands( they are char-sensitive! ):
 > - GoFrontCommand 
 > - GoBackCommand 
@@ -23,7 +23,7 @@ These is the list of the supported commands( they are char-sensitive! ):
 > - GoRotateClockwiseCommand
 > - GoRotateReverseClockwiseCommand
 
-####Reference system used in the program
+#### Reference system used in the program
 This program uses this type of system reference:
 
 ![image](./resource/reference.png)
